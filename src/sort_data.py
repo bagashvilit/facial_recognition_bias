@@ -41,7 +41,7 @@ def filter_data(age, gender, ethnicity):
                 filtered.append('_'.join(file_name))
     return filtered
 
-# Please refer the labels in README.md, if you don't wan to use label put dash
+# Please refer the labels in README.md, if you don't want to use label put dash
 #instead of a number
 filtered  = filter_data('-','1', '2')
 
