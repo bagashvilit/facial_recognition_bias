@@ -43,6 +43,6 @@ def filter_data(age, gender, ethnicity):
 
 # Please refer the labels in README.md, if you don't want to use label put dash
 #instead of a number
-filtered  = filter_data('-','1', '2')
+filtered  = filter_data('-','-', '0')
 
 print(filtered)
