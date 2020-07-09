@@ -52,4 +52,4 @@ def visualizer(path,gender,save):
     plt.show()
 
 
-visualizer("../../data/females","Female","../../plots/female_CNN.png")
+visualizer("../../data/males","Male","../../plots/male_CNN.png")
