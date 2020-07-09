@@ -15,7 +15,9 @@ def gender_detector(image):
     # image: the input image that needs to be preprocessed
     # scalefactor: after mean subtraction image can be scaled by the scalefactorself.
     # size: size that Convolutional Neural Network expects.
-    mean = (78.4263377603, 87.7689143744, 114.895847746)
+    # mean values here are for mean subtraction, usually the values that were used for
+    # training are used for classification as well
+    mean = (104, 117, 123)
     blob = cv2.dnn.blobFromImage(image, 1.0, (227,227), mean, swapRB=False)
 
     #Predict Gender
@@ -24,7 +26,7 @@ def gender_detector(image):
     gender = gender_list[gender_preds[0].argmax()]
     return gender
 
-image = cv2.imread("images/sample1.jpg")
+image = cv2.imread("images/sample.jpg")
 gender = gender_detector(image)
 cv2.imshow("Gender: {}".format(gender),image)
 cv2.waitKey()
