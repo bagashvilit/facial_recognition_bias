@@ -4,7 +4,7 @@ def load_caffe_models():
     gender_net = cv2.dnn.readNetFromCaffe('deploy_gender.prototxt', 'gender_net.caffemodel')
     return(gender_net)
 
-image = cv2.imread("photo.jpg")
+
 
 def gender_detector(image):
     gender_net = load_caffe_models()
@@ -23,3 +23,8 @@ def gender_detector(image):
     gender_preds = gender_net.forward()
     gender = gender_list[gender_preds[0].argmax()]
     return gender
+
+image = cv2.imread("images/sample1.jpg")
+gender = gender_detector(image)
+cv2.imshow("Gender: {}".format(gender),image)
+cv2.waitKey()
