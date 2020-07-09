@@ -44,9 +44,9 @@ def filter_file_names(age, gender, ethnicity):
 
 # Please refer the labels in README.md, if you don't want to use label put dash
 #instead of a number
-filtered  = filter_file_names('-','1', '-')
+filtered  = filter_file_names('-','1', '4')
 
-path_to_classified = '../data/female'
+path_to_classified = '../data/female_other'
 for i in filtered:
     data_path = os.path.join(path,"{}".format(i))
     img = cv2.imread(data_path)

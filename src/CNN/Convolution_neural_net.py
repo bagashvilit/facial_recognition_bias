@@ -6,7 +6,9 @@ def load_caffe_models():
 
 image = cv2.imread("photo.jpg")
 
-def gender_detector(gender_net,image):
+def gender_detector(image):
+    gender_net = load_caffe_models()
+
     gender_list = ['Male', 'Female']
 
     #Preprocess image and prepare it for the classification
@@ -20,8 +22,4 @@ def gender_detector(gender_net,image):
     gender_net.setInput(blob)
     gender_preds = gender_net.forward()
     gender = gender_list[gender_preds[0].argmax()]
-    print("Gender : " + gender)
-
-gender_net = load_caffe_models()
-
-gender_detector(gender_net,image)
+    return gender
