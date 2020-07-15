@@ -51,5 +51,5 @@ def visualizer(path,gender,save):
     plt.savefig(save)
     plt.show()
 
-
-visualizer("../../data/males","Male","../../plots/CNN_male.png")
+#
+visualizer("../../data/random_200/females","Female","../../plots/CNN_female_200.png")

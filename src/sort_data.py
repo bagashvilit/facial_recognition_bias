@@ -3,7 +3,7 @@
 import os
 import cv2
 from glob import glob
-
+import random
 
 path = "../data/crop_part1"
 
@@ -45,9 +45,9 @@ def filter_file_names(age, gender, ethnicity):
 # Please refer the labels in README.md, if you don't want to use label put dash
 #instead of a number
 filtered  = filter_file_names('-','0', '4')
-
-path_to_classified = '../data/males/other'
-for i in filtered:
+random_images = random.sample(filtered, 200)
+path_to_classified = '../data/random_200/males/other'
+for i in random_images:
     data_path = os.path.join(path,"{}".format(i))
     img = cv2.imread(data_path)
     cv2.imwrite(os.path.join(path_to_classified , "{}".format(i)), img)

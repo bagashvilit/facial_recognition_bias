@@ -39,7 +39,7 @@ def gender_detector(image):
 # provide the path to the input image as a parameter.
 # The output will be Open CV window with a label on top, label is generated
 # using the convolution neural network
-image = cv2.imread("images/sample.jpg")
-gender = gender_detector(image)
-cv2.imshow("Gender: {}".format(gender),image)
-cv2.waitKey()
+# image = cv2.imread("images/sample1.jpg")
+# gender = gender_detector(image)
+# cv2.imshow("Gender: {}".format(gender),image)
+# cv2.waitKey()
