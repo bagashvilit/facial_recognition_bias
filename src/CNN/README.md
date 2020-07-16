@@ -4,10 +4,14 @@
 ## Disscussion points:
 
 - Gender classification models are usually binary classifiers, what ethical issues may this lead to?
-- What could be development biases and ethical issues with the use of the Face Recognition technology
+- What could be development biases and ethical issues with the use of the Face Recognition technology.
 - Who should not use this tool and why?
 
 ## Related Articles
+
+https://www.businessinsider.in/tech/news/google-ai-will-no-longer-use-gender-labels-like-woman-or-man-on-images-of-people-to-avoid-bias/articleshow/74227834.cms
+
+https://blogs.microsoft.com/ai/gender-skin-tone-facial-recognition-improvement/
 
 https://www.cbc.ca/news/technology/facial-recognition-race-1.5403899
 
