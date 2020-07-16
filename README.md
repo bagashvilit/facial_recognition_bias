@@ -1,10 +1,10 @@
 # facial_recognition_bias
 
-Project for showing biases in facial recognition technologies
+Project for showing ethical issues with facial recognition technologies
 
 ## Data
 
-The data is retrieved from [Kaggle](https://www.kaggle.com/) and is stored in file `crop_part1` in folder `data`. File stores over 9,000 face images. The images are annotated with age, gender and ethnicity. The images are cropped and aligned.
+The data is retrieved from [Kaggle](https://www.kaggle.com/) and is stored in file `crop_part1` in folder `data`. File stores over thousands of face images. The images are annotated with age, gender and ethnicity. The images are cropped and aligned.
 
 ## Labels
 

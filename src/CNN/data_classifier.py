@@ -23,7 +23,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 import cv2
-import Convolution_neural_net
+import convolution_neural_net
 
 
 def load_images_from_folder(folder):
@@ -58,7 +58,7 @@ def visualizer(path,gender,save):
         labeled_per_race = []
         labeled_all.append(labeled_per_race)
         for image in file:
-            labeled_per_race.append(Convolution_neural_net.gender_detector(image))
+            labeled_per_race.append(convolution_neural_net.gender_detector(image))
 
     correct_guess = []
     for i in labeled_all:

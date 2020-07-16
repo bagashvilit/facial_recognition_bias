@@ -1,10 +1,15 @@
+## Convolution Neural Network
+
+
 ## Disscussion points:
 
 - Gender classification models are usually binary classifiers, what ethical issues may this lead to?
-- What could be development biases and ethical issues with use of the Face Recognition technology
+- What could be development biases and ethical issues with the use of the Face Recognition technology
 - Who should not use this tool and why?
 
 ## Related Articles
+
+https://www.cbc.ca/news/technology/facial-recognition-race-1.5403899
 
 https://www.nytimes.com/2020/06/25/technology/facial-recognition-software-dangers.html?smid=tw-share
 
