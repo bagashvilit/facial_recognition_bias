@@ -2,6 +2,7 @@
 # python classify.py --females number --males number
 # number here should be desired number of train samples for each binary gender group
 from __future__ import print_function
+from pyimagesearch.rgbhistogram import RGBHistogram
 from sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
@@ -37,15 +38,16 @@ random_males = random.sample(males, int(args["males"]))
 
 imagePaths = np.concatenate((random_males, random_females))
 
+desc = RGBHistogram([8, 8, 8])
+
 data = []
 target = []
 for imagePath in imagePaths:
 	# load the image
 	image = cv2.imread(imagePath)
 	# describe the image
-	# update the list of data and targets
-	mean = (104, 117, 123)
-	features = cv2.dnn.blobFromImage(image, 1.0, (227,227), mean, swapRB=False)
+
+	features = desc.describe(image)
 
 	data.append(features.flatten())
 	target.append(imagePath.split("_")[1])
@@ -71,23 +73,21 @@ print(classification_report(testTarget, model.predict(testData),
 
 # loop over a sample of the images
 for i in np.random.choice(np.arange(0, len(imagePaths)), 10):
-    # grab the image
-    imagePath = imagePaths[i]
+	# grab the image
+	imagePath = imagePaths[i]
 
-    # load the image
-    image = cv2.imread(imagePath)
+	# load the image
+	image = cv2.imread(imagePath)
 
     # describe the image
     # features = desc.describe(image)
-    mean = (104, 117, 123)
-    features = cv2.dnn.blobFromImage(image, 1.0, (227,227), mean, swapRB=False)
+	features = desc.describe(image)
 
-
-    gender = le.inverse_transform(model.predict([features.flatten()]))[0]
-    print(imagePath)
-    if gender == "0":
-        print("The person on this photo might be male")
-    else:
-        print("The person on this photo might be female")
-    cv2.imshow("image", image)
-    cv2.waitKey(0)
+	gender = le.inverse_transform(model.predict([features.flatten()]))[0]
+	print(imagePath)
+	if gender == "0":
+		print("The person on this photo might be male")
+	else:
+		print("The person on this photo might be female")
+	cv2.imshow("image", image)
+	cv2.waitKey(0)
