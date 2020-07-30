@@ -16,9 +16,9 @@ import collections
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-f", "--females", required = True,
-	help = "path to the training image dataset")
+	help = "number of images of females.(Max 5407)")
 ap.add_argument("-m", "--males", required = True,
-	help = "path to the training image dataset")
+	help = "number of images of males.(Max 4372)")
 args = vars(ap.parse_args())
 
 path = "../../data/images"
@@ -29,7 +29,7 @@ females = []
 for imagePath in imagePaths:
     if (imagePath.split("_")[1] == "0"):
         males.append(imagePath)
-    else:
+    if (imagePath.split("_")[1] == "1"):
         females.append(imagePath)
 
 random_females = random.sample(females, int(args["females"]))
