@@ -67,6 +67,7 @@ target = le.fit_transform(target)
 model = RandomForestClassifier(n_estimators = 25, random_state = 84)
 model.fit(trainData, trainTarget)
 
+
 # evaluate the classifier
 print(classification_report(testTarget, model.predict(testData),
 	target_names = targetNames))

@@ -21,11 +21,11 @@ def load_caffe_models():
     return(gender_net)
 
 
-def gender_detector(image):
+def classify(image):
 
     gender_net = load_caffe_models()
 
-    gender_list = ['Male', 'Female']
+    gender_list = ['0', '1']
     """
     Preprocess image and prepare it for the classification.
 
