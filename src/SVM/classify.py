@@ -4,6 +4,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
+from sklearn.svm import SVC
 import numpy as np
 import argparse
 import glob
@@ -66,7 +67,7 @@ target = le.fit_transform(target)
 	test_size = 0.3, random_state = 42)
 
 # train the classifier
-model = RandomForestClassifier(n_estimators = 25, random_state = 84)
+model = SVC()
 model.fit(trainData, trainTarget)
 
 print("0: Male")

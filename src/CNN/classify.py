@@ -37,6 +37,7 @@ random_males = random.sample(males, int(args["males"]))
 
 imagePaths = np.concatenate((random_males, random_females))
 
+
 # load caffemodel
 # .prototxt file holds overall information about the neural network, such as:
 # list of layers, connections between layers,parameters of each layers, and input/output dimensions.
@@ -72,6 +73,33 @@ targetNames = np.unique(target)
 le = LabelEncoder()
 target = le.fit_transform(target)
 
+
+print("0: Male")
+print("1: Female")
 # evaluate the classifier
 print(classification_report(target, labels,
 	target_names = targetNames))
+
+
+for i in np.random.choice(np.arange(0, len(imagePaths)), 10):
+	# grab the image
+	imagePath = imagePaths[i]
+
+	# load the image
+	image = cv2.imread(imagePath)
+
+	blob = cv2.dnn.blobFromImage(image, 1.0, (227,227), mean, swapRB=False)
+
+	gender_list = [0, 1]
+
+	# Predict the gender
+	gender_net.setInput(blob)
+	gender_preds = gender_net.forward()
+	gender = gender_list[gender_preds[0].argmax()]
+	print(imagePath)
+	if gender == 0:
+		print("The person on this photo might be male")
+	else:
+		print("The person on this photo might be female")
+	cv2.imshow("image", image)
+	cv2.waitKey(0)
