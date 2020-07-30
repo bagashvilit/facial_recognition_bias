@@ -1,6 +1,3 @@
-# USAGE
-# python classify.py --females number --males number
-# number here should be desired number of train samples for each binary gender group
 from __future__ import print_function
 from pyimagesearch.rgbhistogram import RGBHistogram
 from sklearn.preprocessing import LabelEncoder
@@ -12,7 +9,6 @@ import argparse
 import glob
 import cv2
 import random
-import collections
 import os
 
 # construct the argument parser and parse the arguments

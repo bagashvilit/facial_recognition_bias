@@ -1,6 +1,3 @@
-# USAGE
-# python classify.py --females number --males number
-# number here should be desired number of images for each binary gender group
 from __future__ import print_function
 from sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import RandomForestClassifier
