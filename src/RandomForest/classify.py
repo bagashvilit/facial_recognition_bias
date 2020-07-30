@@ -22,9 +22,9 @@ args = vars(ap.parse_args())
 path = "../../data/images"
 imagePaths = sorted(glob.glob(path + "/*.jpg"))
 
+# Sort out the data based on gender
 # number of images of males: 4372
 # number of images of females: 5407
-
 males = []
 females = []
 for imagePath in imagePaths:
@@ -33,6 +33,7 @@ for imagePath in imagePaths:
     if (imagePath.split("_")[1] == "1"):
         females.append(imagePath)
 
+# Select random images from the sorted data. Number will be taken from the user.
 random_females = random.sample(females, int(args["females"]))
 random_males = random.sample(males, int(args["males"]))
 

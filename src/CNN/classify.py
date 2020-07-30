@@ -20,6 +20,9 @@ args = vars(ap.parse_args())
 path = "../../data/images"
 imagePaths = sorted(glob.glob(path + "/*.jpg"))
 
+# Sort out the data based on gender
+# number of images of males: 4372
+# number of images of females: 5407
 males = []
 females = []
 for imagePath in imagePaths:
@@ -28,10 +31,16 @@ for imagePath in imagePaths:
     if (imagePath.split("_")[1] == "1"):
         females.append(imagePath)
 
+# Select random images from the sorted data. Number will be taken from the user.
 random_females = random.sample(females, int(args["females"]))
 random_males = random.sample(males, int(args["males"]))
 
 imagePaths = np.concatenate((random_males, random_females))
+
+# load caffemodel
+# .prototxt file holds overall information about the neural network, such as:
+# list of layers, connections between layers,parameters of each layers, and input/output dimensions.
+# .caffemodel file stores weights of layers of Neural network
 gender_net = cv2.dnn.readNetFromCaffe('deploy_gender.prototxt', 'gender_net.caffemodel')
 
 
@@ -41,7 +50,10 @@ for imagePath in imagePaths:
     # load the image
     image = cv2.imread(imagePath)
     # describe the image
-
+    # scalefactor: after mean subtraction image can be scaled by the scalefactor
+    # size: size that Convolutional Neural Network expects.
+    # mean values here are for mean subtraction, usually the mean values that were used for
+    # training are used for classification as well
     mean = (104, 117, 123)
     blob = cv2.dnn.blobFromImage(image, 1.0, (227,227), mean, swapRB=False)
 
@@ -49,6 +61,7 @@ for imagePath in imagePaths:
 
     gender_list = [0, 1]
 
+	# Predict the gender
     gender_net.setInput(blob)
     gender_preds = gender_net.forward()
     gender = gender_list[gender_preds[0].argmax()]
