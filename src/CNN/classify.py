@@ -1,6 +1,6 @@
 # USAGE
 # python classify.py --females number --males number
-# number here should be desired number of train samples for each binary gender group
+# number here should be desired number of images for each binary gender group
 from __future__ import print_function
 from sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import RandomForestClassifier
@@ -11,7 +11,6 @@ import argparse
 import glob
 import cv2
 import random
-import collections
 
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
