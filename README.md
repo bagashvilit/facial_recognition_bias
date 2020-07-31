@@ -10,6 +10,7 @@
   + [Automated Testing](#automated-testing)
   + [Code Linting](#Code-linting)
 * [Contributing](#contributing)
+* [Reading Material](#Reading-Material)
 * [Ethical discussions](#ethical-discussions)
 * [Future work](#future-work)
 * [Data used](#data-used)
