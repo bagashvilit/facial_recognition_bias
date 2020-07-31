@@ -37,31 +37,31 @@ Therefore the purpose of this project is to highlight ethical issues with face r
 
 ## Run
 
-- With Poetry(Recommended)
+### With Poetry(Recommended)
 
-    After pulling the repo, use `poetry shell` in `facial_recognition_bias/` to enter the virtual environment. Under the virtual environment, use `poetry install` to install dependencies. Please refer to poetry documentation [here](https://python-poetry.org/docs/basic-usage/#installing-dependencies) for more info about dependency installation.
+After pulling the repo, use `poetry shell` in `facial_recognition_bias/` to enter the virtual environment. Under the virtual environment, use `poetry install` to install dependencies. Please refer to poetry documentation [here](https://python-poetry.org/docs/basic-usage/#installing-dependencies) for more info about dependency installation.
 
-    After entering the virtual environment and installing the dependencies please refer to the following links for the detailed info on how to run each classifier.
+After entering the virtual environment and installing the dependencies please refer to the following links for the detailed info on how to run each classifier.
 
-    - [Convolution Neural Network(CNN)](src/CNN/README.md)
-    - [Multi-layer Perception(MLP)](src/MLP/README.md)
-    - [Random Forest(RandomForest)](src/RandomForest/README.md)
-    - [Support Vector(SVM)](src/SVM/README.md)
+- [Convolution Neural Network(CNN)](src/CNN/README.md)
+- [Multi-layer Perception(MLP)](src/MLP/README.md)
+- [Random Forest(RandomForest)](src/RandomForest/README.md)
+- [Support Vector(SVM)](src/SVM/README.md)
 
-- Without Poetry
+### Without Poetry
 
-    Alternatively all dependencies required for this project will need to be installed
-    locally on your machine. You may use `pip` for that purpose.
+Alternatively all dependencies required for this project will need to be installed
+locally on your machine. You may use `pip` for that purpose.
 
-    `python3 -m pip install --upgrade pip`
-    `pip install package_name`
+`python3 -m pip install --upgrade pip`
+`pip install package_name`
 
-    After installing all the dependencies please refer to the following links for the detailed info on how to run each classifier.
+After installing all the dependencies please refer to the following links for the detailed info on how to run each classifier.
 
-    - [Convolution Neural Network(CNN)](src/CNN/README.md)
-    - [Multi-layer Perception(MLP)](src/MLP/README.md)
-    - [Random Forest(RandomForest)](src/RandomForest/README.md)
-    - [Support Vector(SVM)](src/SVM/README.md)
+- [Convolution Neural Network(CNN)](src/CNN/README.md)
+- [Multi-layer Perception(MLP)](src/MLP/README.md)
+- [Random Forest(RandomForest)](src/RandomForest/README.md)
+- [Support Vector(SVM)](src/SVM/README.md)
 
 ## Development info
 
@@ -71,9 +71,23 @@ You can add new dependencies to `pyproject.toml` either manually or by `poetry a
 
 Use `poetry update` for updating the dependencies to their latest versions as neccessary. Please refer to documentation [here](https://python-poetry.org/docs/cli/#update) for more information.
 
-Please use `pre-commit` hooks for linting the code. Install pre-commit with `pip install pre-commit` or follow the documentation [here](https://pre-commit.com/#install). After cloning the repository locally run `pre-commit install` to install pre-commit into your git hooks. NOTE: You would have to run `pre-commit install` every time you clone a repository. Please refer to documentation [here](https://pre-commit.com/#usage) for more information.
+Please use `pre-commit` hooks for linting the code. Install pre-commit with `pip install pre-commit` or follow the documentation [here](https://pre-commit.com/#install). After cloning the repository locally run `pre-commit install` to install pre-commit into your git hooks.
+
+NOTE: You would have to run `pre-commit install` every time you clone a repository. Please refer to documentation [here](https://pre-commit.com/#usage) for more information.
+
+NOTE: You will not be able to complete commit unless all the linters pass. Only staged changes will be checked at the time of commit.
 
 ## Testing
+
+Use `poetry run pytest` to run the test suite.
+
+Use `poetry run pre-commit run --all-files` to check the code with linters and get the diagnostic info.
+Currently this project uses following linters:
+- pylint
+- pydocstyle
+- flake8
+- black
+You may add more linters to `.pre-commit-config.yaml`
 
 ## Contributing
 
