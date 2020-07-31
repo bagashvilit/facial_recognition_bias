@@ -3,12 +3,12 @@
 * [About](#about)
 * [Installation](#installation)
 * [Run](#run)
-  + [With Poetry(Recommended)](#With-Poetry(Recommended))
+  + [With Poetry(Recommended)](#run)
   + [Without Poetry](#Without-Poetry)
 * [Development info](#Development-info)
 * [Testing](#Testing)
   + [Automated Testing](#automated-testing)
-  + [Code Linting](#code-linting)
+  + [Code Linting](#Code-linting)
 * [Contributing](#contributing)
 * [Ethical discussions](#ethical-discussions)
 * [Future work](#future-work)
@@ -79,19 +79,30 @@ NOTE: You will not be able to complete commit unless all the linters pass. Only 
 
 ## Testing
 
-Use `poetry run pytest` to run the test suite.
+### Automated Testing
+
+Developers of this program can run the test suite with `Pytest`
+
+`poetry run pytest`
+
+### Code linting
 
 Use `poetry run pre-commit run --all-files` to check the code with linters and get the diagnostic info.
+
 Currently this project uses following linters:
+
 - pylint
 - pydocstyle
 - flake8
 - black
+
 You may add more linters to `.pre-commit-config.yaml`
 
 ## Contributing
 
 ## Future work
+
+Currently this project mainly examines the gender biasis, and how easy it is to manipulate with the classification algorithm by modifing the training data. Users of this program can experiment with classifiers and see that more diverse the data more precicise the trained model will be. Please refer to README.md for each individual classifier for more information about how to experiment with this project. This work also allows to compare the efficency of various classification algorithms. The project can further be extended by examining biasis with gender and age, and adding more classification algorithms for comparison, or adding feature to visualise the efficiency of the classifiers.
 
 ## Reading Material
 
@@ -99,7 +110,7 @@ You may add more linters to `.pre-commit-config.yaml`
 
 ## Data used
 
-The images used used in this project are retrieved from [Kaggle](https://www.kaggle.com/) and are stored in file `data/images` directory. File stores about 10 000 face images. The images are annotated with age, gender and ethnicity. The images are cropped and aligned.
+The images used in this project are retrieved from [Kaggle](https://www.kaggle.com/) and are stored in file `data/images` directory. File stores about 10 000 face images. The images are annotated with age, gender and ethnicity. The images are cropped and aligned.
 
 The labels of each face image is embedded in the file name, formatted like
 age_gender_race_date&time.jpg
