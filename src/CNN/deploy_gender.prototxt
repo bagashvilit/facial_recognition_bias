@@ -94,7 +94,7 @@ layers {
   }
 }
 layers{
-  name: "relu3" 
+  name: "relu3"
   type: RELU
   bottom: "conv3"
   top: "conv3"

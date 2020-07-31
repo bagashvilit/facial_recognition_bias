@@ -1,14 +1,24 @@
-# facial_recognition_bias
+# contents
 
-This is a project for showing ethical issues with facial recognition technologies.
+# description
+
+# installation
+
+# info for developers
+
+# info for users
 
 # Run
 
-Please refer to the `README.md` for each individual program in `src` directory.
+# testing
+
+# ethical discussions
+
+# future work
 
 ## Data
 
-The images used here are retrieved from [Kaggle](https://www.kaggle.com/) and are stored in file `data/images`. File stores about 10 000 face images. The images are annotated with age, gender and ethnicity. The images are cropped and aligned.
+The images used used in this project are retrieved from [Kaggle](https://www.kaggle.com/) and are stored in file `data/images` directory. File stores about 10 000 face images. The images are annotated with age, gender and ethnicity. The images are cropped and aligned.
 
 The labels of each face image is embedded in the file name, formatted like
 age_gender_race_date&time.jpg
