@@ -2,15 +2,16 @@
 
 * [About](#about)
 * [Installation](#installation)
-* [info for developers](#info-for-developers)
-* [info for users](#info-for-users)
-* [testing](#testing)
+* [Run](#run)
+  + [With Poetry(Recommended)](#With-Poetry(Recommended))
+  + [Without Poetry](#Without-Poetry)
+* [Development info](#Development-info)
+* [Testing](#Testing)
   + [Automated Testing](#automated-testing)
   + [Code Linting](#code-linting)
-* [Run](#run)
-* [ethical discussions](#ethical-discussions)
-* [future work](#future-work)
 * [Contributing](#contributing)
+* [Ethical discussions](#ethical-discussions)
+* [Future work](#future-work)
 * [Data used](#data-used)
 
 ## About
@@ -43,9 +44,9 @@ Therefore the purpose of this project is to highlight ethical issues with face r
     After entering the virtual environment and installing the dependencies please refer to the following links for the detailed info on how to run each classifier.
 
     - [Convolution Neural Network(CNN)](src/CNN/README.md)
-    - Multi-layer Perception(MLP)
-    - Random Forest(RandomForest)
-    - Support Vector(SVM)
+    - [Multi-layer Perception(MLP)](src/MLP/README.md)
+    - [Random Forest(RandomForest)](src/RandomForest/README.md)
+    - [Support Vector(SVM)](src/SVM/README.md)
 
 - Without Poetry
 
@@ -53,18 +54,28 @@ Therefore the purpose of this project is to highlight ethical issues with face r
     locally on your machine. You may use `pip` for that purpose.
 
     `python3 -m pip install --upgrade pip`
-    `pip install package`
+    `pip install package_name`
 
     After installing all the dependencies please refer to the following links for the detailed info on how to run each classifier.
 
-    - Convolution Neural Network(CNN)
-    - Multi-layer Perception(MLP)
-    - Random Forest(RandomForest)
-    - Support Vector(SVM)
+    - [Convolution Neural Network(CNN)](src/CNN/README.md)
+    - [Multi-layer Perception(MLP)](src/MLP/README.md)
+    - [Random Forest(RandomForest)](src/RandomForest/README.md)
+    - [Support Vector(SVM)](src/SVM/README.md)
 
 ## Development info
 
+When under developmnet always install the dependencies with `poetry install` and run the program with `poetry run python program_name`.
+
+You can add new dependencies to `pyproject.toml` either manually or by `poetry add package_name`. Please refer to documentation [here](https://python-poetry.org/docs/cli/#add) for more information.
+
+Use `poetry update` for updating the dependencies to their latest versions as neccessary. Please refer to documentation [here](https://python-poetry.org/docs/cli/#update) for more information.
+
+Please use `pre-commit` hooks for linting the code. Install pre-commit with `pip install pre-commit` or follow the documentation [here](https://pre-commit.com/#install). After cloning the repository locally run `pre-commit install` to install pre-commit into your git hooks. NOTE: You would have to run `pre-commit install` every time you clone a repository. Please refer to documentation [here](https://pre-commit.com/#usage) for more information.
+
 ## Testing
+
+## Contributing
 
 ## Future work
 
