@@ -1,7 +1,7 @@
 # Table of contents
 
 * [About](#about)
-* [installation](#installation)
+* [Installation](#installation)
 * [info for developers](#info-for-developers)
 * [info for users](#info-for-users)
 * [testing](#testing)
@@ -11,7 +11,7 @@
 * [ethical discussions](#ethical-discussions)
 * [future work](#future-work)
 * [Contributing](#contributing)
-* [Data](#data)
+* [Data used](#data-used)
 
 ## About
 
@@ -26,11 +26,41 @@ Therefore the purpose of this project is to highlight ethical issues with face r
 
     `https://github.com/Allegheny-Mozilla-Fellows/facial_recognition_bias.git`
 
-    With SSH:
+    or With SSH:
 
     `git@github.com:Allegheny-Mozilla-Fellows/facial_recognition_bias.git`
 
+- Install Poetry(Recommended)
+
+    Poetry is a tool for dependency managment and packaging in Python. Please follow the documentation [here](https://python-poetry.org/docs/#installation) on how to install poetry on your machine
+
 ## Run
+
+- With Poetry(Recommended)
+
+    After pulling the repo, use `poetry shell` in `facial_recognition_bias/` to enter the virtual environment. Under the virtual environment, use `poetry install` to install dependencies. Please refer to poetry documentation [here](https://python-poetry.org/docs/basic-usage/#installing-dependencies) for more info about dependency installation.
+
+    After entering the virtual environment and installing the dependencies please refer to the following links for the detailed info on how to run each classifier.
+
+    - [Convolution Neural Network(CNN)](src/CNN/README.md)
+    - Multi-layer Perception(MLP)
+    - Random Forest(RandomForest)
+    - Support Vector(SVM)
+
+- Without Poetry
+
+    Alternatively all dependencies required for this project will need to be installed
+    locally on your machine. You may use `pip` for that purpose.
+
+    `python3 -m pip install --upgrade pip`
+    `pip install package`
+
+    After installing all the dependencies please refer to the following links for the detailed info on how to run each classifier.
+
+    - Convolution Neural Network(CNN)
+    - Multi-layer Perception(MLP)
+    - Random Forest(RandomForest)
+    - Support Vector(SVM)
 
 ## Development info
 
@@ -38,7 +68,11 @@ Therefore the purpose of this project is to highlight ethical issues with face r
 
 ## Future work
 
-## Data
+## Reading Material
+
+## Ethical Discussions
+
+## Data used
 
 The images used used in this project are retrieved from [Kaggle](https://www.kaggle.com/) and are stored in file `data/images` directory. File stores about 10 000 face images. The images are annotated with age, gender and ethnicity. The images are cropped and aligned.
 
@@ -50,7 +84,3 @@ age_gender_race_date&time.jpg
 - race is an integer from 0 to 4, denoting White, Black, Asian, Indian, and Others (like Hispanic, Latino, Middle Eastern).
 
 More information on data can be found [here](https://susanqq.github.io/UTKFace/).
-
-## Reading Material
-
-## Ethical Discussions
