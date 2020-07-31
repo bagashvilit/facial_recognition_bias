@@ -1,6 +1,21 @@
-# contents
+# Table of contents
 
-# description
+* [About](#about)
+* [installation](#installation)
+* [info for developers](#info-for-developers)
+* [info for users](#info-for-users)
+* [testing](#testing)
+  + [Automated Testing](#automated-testing)
+  + [Test Coverage](#test-coverage)
+  + [Testing with Multiple Python Versions](#testing-with-multiple-python-versions)
+  + [Code Linting](#code-linting)
+* [Run](#run)
+* [ethical discussions](#ethical-discussions)
+* [future work](#future-work)
+* [Contributing](#contributing)
+* [Data](#data)
+
+# About
 
 # installation
 
