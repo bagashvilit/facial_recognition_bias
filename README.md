@@ -102,9 +102,23 @@ You may add more linters to `.pre-commit-config.yaml`
 
 ## Future work
 
-Currently this project mainly examines the gender biasis, and how easy it is to manipulate with the classification algorithm by modifing the training data. Users of this program can experiment with classifiers and see that more diverse the data more precicise the trained model will be. Please refer to README.md for each individual classifier for more information about how to experiment with this project. This work also allows to compare the efficency of various classification algorithms. The project can further be extended by examining biasis with gender and age, and adding more classification algorithms for comparison, or adding feature to visualise the efficiency of the classifiers.
+Currently this project mainly examines the gender biasis, and how easy it is to manipulate with the classification algorithm by modifing the training data. Users of this program can experiment with classifiers and see that more diverse the data more precicise the trained model will be. Please refer to README.md for each individual classifier for more information about how to experiment with this project. This work also allows to compare the efficency of various classification algorithms. The project can further be extended by examining biasis with race and age, and adding more classification algorithms for comparison, or adding feature to visualise the efficiency of the classifiers.
 
 ## Reading Material
+
+Here is the list of articles that may give the user more insights into the biasis in facial recognition technologies.
+
+- [facial-recognition-race](https://www.cbc.ca/news/technology/facial-recognition-race-1.5403899)
+
+- [facial-recognition-software-dangers](https://www.nytimes.com/2020/06/25/technology/facial-recognition-software-dangers.html?smid=tw-share)
+
+- [Facial recognition to 'predict criminals' sparks row over AI bias](https://www.bbc.com/news/technology-53165286)
+
+- [the-computer-got-it-wrong-how-facial-recognition-led-to-a-false-arrest-in-michig](https://www.npr.org/2020/06/24/882683463/the-computer-got-it-wrong-how-facial-recognition-led-to-a-false-arrest-in-michig)
+
+- [google-ai-will-no-longer-use-gender-labels-like-woman-or-man-on-images-of-people-to-avoid-bias](https://www.businessinsider.in/tech/news/google-ai-will-no-longer-use-gender-labels-like-woman-or-man-on-images-of-people-to-avoid-bias/articleshow/74227834.cms)
+
+- [gender-skin-tone-facial-recognition-improvement](https://blogs.microsoft.com/ai/gender-skin-tone-facial-recognition-improvement/)
 
 ## Ethical Discussions
 
