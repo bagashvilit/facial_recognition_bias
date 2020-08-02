@@ -3,7 +3,7 @@
 Here are some important resources:
 
   * Email:
-  * Bugs? Use the GitHub Issue Tracker, unless the issue is security realted, in  which case email either of the two people above.
+  * Bugs? Use the GitHub Issue Tracker.
 
 ## Testing
 
@@ -21,14 +21,14 @@ Always write a clear log message for your commits. One-line messages are fine fo
 
 ## Did you fix whitespace, format code, or make a purely cosmetic patch?
 
-Changes that are cosmetic in nature and do not add anything substantial to the stability, functionality, or testability of Misinformation will generally not be accepted.
+Changes that are cosmetic in nature and do not add anything substantial to the stability, functionality, or testability will generally not be accepted.
 
-## Do you want to contribute to the MisInfoBot documentation?
+## Do you want to contribute to the documentation?
 
-You can help improve the Misinformation guides by making them more coherent, consistent, or readable, adding missing information, correcting factual errors, fixing typos, or bringing them up to date with the latest edge Rails.
+You can help improve the guides by making them more coherent, consistent, or readable, adding missing information, correcting factual errors, fixing typos, or bringing them up to date.
 
-To do so, make changes to MisInfoBot guides source files (located here on GitHub) or comments in source code. Then open a pull request to apply your changes to the master branch.
+To do so, make changes then open a pull request to apply your changes to the master branch.
 
 ## Do you have questions about the source code?
 
-Please email either Dr. Bonham-Carter or Declan Casey for any and all questions related to the Misinformation repository.
+If you have other questions or concerns please email the contributors of this project.
