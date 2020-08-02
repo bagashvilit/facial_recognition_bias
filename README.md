@@ -101,6 +101,10 @@ You may add more linters to `.pre-commit-config.yaml`
 
 ## Contributing
 
+We welcome everyone who is interested in helping improve this project! If you are interested in being a contributor, please review our [Code of Conduct](./CODE_OF_CONDUCT.md) and [Guidelines for Contributors](./CONTRIBUTING.md) before raising an issue, or beginning a contribution.
+
+To create a pull request please follow this [template](./pull_request_template.md)
+
 ## Future work
 
 Currently this project mainly examines the gender biasis, and how easy it is to manipulate with the classification algorithm by modifing the training data. Users of this program can experiment with classifiers and see that more diverse the data more precicise the trained model will be. Please refer to README.md for each individual classifier for more information about how to experiment with this project. This work also allows to compare the efficency of various classification algorithms. The project can further be extended by examining biasis with race and age, and adding more classification algorithms for comparison, or adding feature to visualise the efficiency of the classifiers.
