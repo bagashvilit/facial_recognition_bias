@@ -28,11 +28,11 @@ Therefore the purpose of this project is to highlight ethical issues with face r
 
     With HTTPS:
 
-    `https://github.com/Allegheny-Mozilla-Fellows/facial_recognition_bias.git`
+    ```https://github.com/Allegheny-Mozilla-Fellows/facial_recognition_bias.git```
 
     or With SSH:
 
-    `git@github.com:Allegheny-Mozilla-Fellows/facial_recognition_bias.git`
+    ```git@github.com:Allegheny-Mozilla-Fellows/facial_recognition_bias.git```
 
 - Install Poetry(Recommended)
 
@@ -56,8 +56,9 @@ After entering the virtual environment and installing the dependencies please re
 Alternatively all dependencies required for this project will need to be installed
 locally on your machine. You may use `pip` for that purpose.
 
-`python3 -m pip install --upgrade pip`
-`pip install package_name`
+```python3 -m pip install --upgrade pip```
+
+```pip install package_name```
 
 After installing all the dependencies please refer to the following links for the detailed info on how to run each classifier.
 
