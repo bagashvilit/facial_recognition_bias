@@ -14,14 +14,15 @@ NOTE: You may run `python classify.py` directly, if you are inside the poetry sh
 
 - After installing all the dependencies locally Navigate to `src/SVM` directory and run: `python classify.py`
 
-  required arguments:
-    - `--females` number of images of females, maximum amount is 5407.
-    - `--males` number of images of males, maximum amount is 4372.
+## Required arguments
 
-  sample command: `poetry run python classify.py --females 1500 --males 1500`
+  - `--females` number of images of females, maximum amount is 5407.
+  - `--males` number of images of males, maximum amount is 4372.
 
-  You may adjust the numbers as necessary to experiment with the algorithm.or example increase the number of input images for one group and observe how that affect the precision of the trained model. The input data
-  will be split into training and test data, where test data share is 0.3.
+sample command: `python classify.py --females 1500 --males 1500`
+
+You may adjust the numbers as necessary to experiment with the algorithm.or example increase the number of input images for one group and observe how that affect the precision of the trained model. The input data
+will be split into training and test data, where test data share is 0.3.
 
 ## Output
 
