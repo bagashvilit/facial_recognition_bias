@@ -19,7 +19,7 @@
 
 ## About
 
-Facial recognition software has become very popular in many industries, including but not limited to law enforcement, airports, healthcare facilities, technology manufacturing companies. As facial recognition technologies gain popularity there are some privacy and ethical concerns rising regarding the development and use of these tools. According to a report by the [National Institute of Standards and Technology](https://www.nist.gov/news-events/news/2019/12/nist-study-evaluates-effects-race-age-sex-face-recognition-software), comercial facial recognition tools exhibited biases with age, gender and race.This is an important issue because biased facial recognition technology in law enforcment may lead to false accusations and arrests, or in airports it may cause delayed flights.
+Facial recognition software is used in many industries, including but not limited to law enforcement, airports, healthcare facilities, technology manufacturing companies. As facial recognition technologies gain popularity there are some privacy and ethical concerns rising regarding the development and use of these tools. According to a report by the [National Institute of Standards and Technology](https://www.nist.gov/news-events/news/2019/12/nist-study-evaluates-effects-race-age-sex-face-recognition-software), comercial facial recognition tools exhibited biases with age, gender and race.This is an important issue because biased facial recognition technology in law enforcment may lead to false accusations and arrests, or in airports it may cause delayed flights.
 Therefore the purpose of this project is to highlight ethical issues with face recognition technologies, compare efficiency of different classification algorithms and raise questions about development and use of face recognition tools.
 
 ## Installation
@@ -110,11 +110,11 @@ To create a pull request please follow this [template](./pull_request_template.m
 
 ## Future work
 
-Currently this project mainly examines the gender biasis, and how easy it is to manipulate with the classification algorithm by modifing the training data. Users of this program can experiment with classifiers and see that more diverse the data more precicise the trained model will be. Please refer to README.md for each individual classifier for more information about how to experiment with this project. This work also allows to compare the efficency of various classification algorithms. The project can further be extended by examining biasis with race and age, and adding more classification algorithms for comparison, or adding feature to visualise the efficiency of the classifiers.
+Currently this project mainly examines the gender biases, and how easy it is to manipulate with the classification algorithm by modifing the training data. Users of this program can experiment with classifiers and see that more diverse the data more precicise the trained model will be. Please refer to README.md for each individual classifier for more information about how to experiment with this project. This work also allows to compare the efficency of various classification algorithms. The project can further be extended by examining biases with race and age, and adding more classification algorithms for comparison, or adding feature to visualise the efficiency of the classifiers.
 
 ## Reading Material
 
-Here is the list of articles that may give the user more insights into the biasis in facial recognition technologies.
+Here is the list of articles that may give the user more insights into the biases in facial recognition technologies.
 
 - [facial-recognition-race](https://www.cbc.ca/news/technology/facial-recognition-race-1.5403899)
 
@@ -130,9 +130,9 @@ Here is the list of articles that may give the user more insights into the biasi
 
 ## Ethical Discussions
 
-- Gender classification tools are usually binary, what athical issues may this lead to? Why?
+- Gender classification tools are usually binary, what ethical issues may this lead to? Why?
 
-- What are some of the ways we can prevent biases in facial technologies as developers and as users?
+- What are some of the ways we can prevent biases in face recognition technologies as developers and as users?
 
 - Which industries should be allowed to use facial recognition tools, who should not? Why?
 
