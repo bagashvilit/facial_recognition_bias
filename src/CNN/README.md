@@ -8,6 +8,8 @@ Info about the algorithm
 
 - Navigate to `src/CNN` directory and run: `poetry run python classify.py`
 
+NOTE: You may run `python classify.py` directly, if you are inside the poetry shell.
+
 ### Without Poetry
 
 - After installing all the dependencies locally Navigate to `src/CNN` directory and run: `python classify.py`
