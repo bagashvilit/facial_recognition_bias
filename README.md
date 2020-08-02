@@ -127,6 +127,12 @@ Here is the list of articles that may give the user more insights into the biasi
 
 ## Ethical Discussions
 
+- Gender classification tools are usually binary, what athical issues may this lead to? Why?
+
+- What are some of the ways we can prevent biases in facial technologies as developers and as users?
+
+- Which industries should be allowed to use facial recognition tools, who should not? Why?
+
 ## Data used
 
 The images used in this project are retrieved from [Kaggle](https://www.kaggle.com/) and are stored in file `data/images` directory. File stores about 10 000 face images. The images are annotated with age, gender and ethnicity. The images are cropped and aligned.
