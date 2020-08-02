@@ -1,23 +1,28 @@
-https://www.tensorflow.org/tutorials/images/cnn
-## Tools and libraries
+## Convolution neural network(CNN)
 
-If you have OpenCV and sklearn installed locally on your machine, you can run Python programs directly
-from the terminal inside the `src` directory.
+Info about the algorithm
 
 ## Run
 
-- run classifier with pre-trained `Convolution Neural Network` inside `src/CNN` directory: `python classify.py`
+### With Poetry
 
-  arguments:
-  - `--females` number of images of females, maximum amount is 5407.
-  - `--males` number of images of males, maximum amount is 4372.
+- Navigate to `src/CNN` directory and run: `poetry run python classify.py`
 
-  sample command:
-  `python classify.py --females 1500 --males 1500`
+### Without Poetry
 
-  You may adjust the numbers as necessary to experiment with the classifier. It may
-  take couple of minutes as you increase the input data size
+- After installing all the dependencies locally Navigate to `src/CNN` directory and run: `python classify.py`
+
+  required arguments:
+    - `--females` number of images of females, maximum amount is 5407.
+    - `--males` number of images of males, maximum amount is 4372.
+
+  sample command: `poetry run python classify.py --females 1500 --males 1500`
+
+  You may adjust the numbers as necessary to experiment with the algorithm.or example increase the number of input images for one group and observe how that affect the precision of the trained model. The input data
+  will be split into training and test data, where test data share is 0.3.
 
 ## Output
 
-The output is a classification report, and labeled sample image
+The output is a classification report, and labeled sample image, press any key to get labels for more images.
+
+(https://www.tensorflow.org/tutorials/images/cnn)
