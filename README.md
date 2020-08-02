@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/Allegheny-Mozilla-Fellows/facial_recognition_bias/workflows/build/badge.svg)](https://github.com/Allegheny-Mozilla-Fellows/facial_recognition_bias/actions)
+
 # Table of contents
 
 * [About](#about)
