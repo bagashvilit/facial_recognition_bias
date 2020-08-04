@@ -2,7 +2,7 @@
 
 Here are some important resources:
 
-  * Email:
+  * Email: Dr. Jumadinova(jjumadinova@allegheny.edu) and Teona Bagashvili(bagashvilit@allegheny.edu)
   * Bugs? Use the GitHub Issue Tracker.
 
 ## Testing

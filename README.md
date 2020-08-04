@@ -3,6 +3,7 @@
 # Table of contents
 
 * [About](#about)
+* [Features](#features)
 * [Installation](#installation)
 * [Run](#run)
   + [With Poetry(Recommended)](#run)
@@ -16,11 +17,26 @@
 * [Ethical discussions](#ethical-discussions)
 * [Future work](#future-work)
 * [Data used](#data-used)
+* [Contact](#contact)
 
 ## About
 
 Facial recognition software is used in many industries, including but not limited to law enforcement, airports, healthcare facilities, technology manufacturing companies. As facial recognition technologies gain popularity there are some privacy and ethical concerns rising regarding the development and use of these tools. According to a report by the [National Institute of Standards and Technology](https://www.nist.gov/news-events/news/2019/12/nist-study-evaluates-effects-race-age-sex-face-recognition-software), comercial facial recognition tools exhibited biases with age, gender and race.This is an important issue because biased facial recognition technology in law enforcment may lead to false accusations and arrests, or in airports it may cause delayed flights.
 Therefore the purpose of this project is to highlight ethical issues with face recognition technologies, compare efficiency of different classification algorithms and raise questions about development and use of face recognition tools.
+The project is funded by Mozilla Foundation and it will be used in AI course at Allegheny College. Please visit the [Allegheny Ethical CS](https://csethics.allegheny.edu/) for more information.
+
+## Features
+
+- Gender classification(binary)
+
+- Experiment with models by adjusting the training data
+
+- Compare classification approaches:
+
+  - Convolution Neural Network(CNN)
+  - Multi-layer Perception(MLP)
+  - Random Forest(RandomForest)
+  - Support Vector(SVM)
 
 ## Installation
 
@@ -148,3 +164,10 @@ age_gender_race_date&time.jpg
 - race is an integer from 0 to 4, denoting White, Black, Asian, Indian, and Others (like Hispanic, Latino, Middle Eastern).
 
 More information on data can be found [here](https://susanqq.github.io/UTKFace/).
+
+## Contact
+
+If you have any questions or concerns about this project please contact:
+
+- Dr. Jumadinova(jjumadinova@allegheny.edu)
+- Teona Bagashvili(bagashvilit@allegheny.edu)
