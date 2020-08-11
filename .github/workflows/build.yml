@@ -28,12 +28,9 @@ jobs:
     - name: Install dependencies
       run: |
         poetry install
-    - name: Install Pytest
-      run: |
-        pip install pytest
     - name: Test with pytest
       run: |
-        pytest
+        poetry run pytest
     - name: linter check
       run: |
         poetry run pre-commit run --all-files

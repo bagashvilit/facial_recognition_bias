@@ -6,11 +6,9 @@ authors = ["bagashvilit <bagashvilit@allegheny.edu>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
-sklearn = "^0.0"
 opencv-python = "3.4.2.17"
 pre-commit = "^2.6.0"
-joblib = "^0.16.0"
-pickle-mixin = "^1.0.2"
+scikit-learn = "^0.23.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
