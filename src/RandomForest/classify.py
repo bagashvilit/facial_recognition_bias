@@ -77,9 +77,10 @@ target = le.fit_transform(target)
 model = RandomForestClassifier(n_estimators=25, random_state=84)
 model.fit(trainData, trainTarget)
 
-import pickle
+# Save the model for test suite
+# import pickle
 
-pickle.dump(model, open("RandomForest_model.pkl", "wb"))
+# pickle.dump(model, open("RandomForest_model.pkl", "wb"))
 
 print("0: Male")
 print("1: Female")

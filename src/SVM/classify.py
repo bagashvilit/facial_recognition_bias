@@ -77,9 +77,11 @@ target = le.fit_transform(target)
 # train the classifier
 model = SVC()
 model.fit(trainData, trainTarget)
-import pickle
 
-pickle.dump(model, open("SVM_model.pkl", "wb"))
+# Save the model for training
+# import pickle
+
+# pickle.dump(model, open("SVM_model.pkl", "wb"))
 
 print("0: Male")
 print("1: Female")
