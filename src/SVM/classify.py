@@ -7,12 +7,15 @@ import random
 
 import cv2
 import numpy as np
-from pyimagesearch.rgbhistogram import RGBHistogram
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.svm import SVC
+
+from pyimagesearch.rgbhistogram import RGBHistogram
+
+# pylint: disable = import-error
 
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
@@ -74,6 +77,9 @@ target = le.fit_transform(target)
 # train the classifier
 model = SVC()
 model.fit(trainData, trainTarget)
+import pickle
+
+pickle.dump(model, open("SVM_model.pkl", "wb"))
 
 print("0: Male")
 print("1: Female")

@@ -145,6 +145,14 @@ pyparsing = ">=2.0.2"
 six = "*"
 
 [[package]]
+category = "main"
+description = "Makes un-pickle-able objects pick-able."
+name = "pickle-mixin"
+optional = false
+python-versions = "*"
+version = "1.0.2"
+
+[[package]]
 category = "dev"
 description = "plugin and hook calling mechanisms for python"
 name = "pluggy"
@@ -337,7 +345,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["jaraco.itertools", "func-timeout"]
 
 [metadata]
-content-hash = "87ceb39defaa66a18e977466297c3229ed92e1ad1f0963dab7c05c9fdbd63f94"
+content-hash = "43bf3028f49829992f8ec28d27b5554091dbf7cc9f494b1897728cdedb5cdd0e"
 python-versions = "^3.7"
 
 [metadata.files]
@@ -448,6 +456,9 @@ opencv-python = [
 packaging = [
     {file = "packaging-20.4-py2.py3-none-any.whl", hash = "sha256:998416ba6962ae7fbd6596850b80e17859a5753ba17c32284f67bfff33784181"},
     {file = "packaging-20.4.tar.gz", hash = "sha256:4357f74f47b9c12db93624a82154e9b120fa8293699949152b22065d556079f8"},
+]
+pickle-mixin = [
+    {file = "pickle-mixin-1.0.2.tar.gz", hash = "sha256:d4983cd09939f6e402c69ba4f4200f2e6ccdfd39c020f6d1091290d78f17625c"},
 ]
 pluggy = [
     {file = "pluggy-0.13.1-py2.py3-none-any.whl", hash = "sha256:966c145cd83c96502c3c3868f50408687b38434af77734af1e9ca461a4081d2d"},
