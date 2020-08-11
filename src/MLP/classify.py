@@ -7,12 +7,13 @@ import random
 
 import cv2
 import numpy as np
-from pyimagesearch.rgbhistogram import RGBHistogram
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
 from sklearn.neural_network import MLPClassifier
 from sklearn.preprocessing import LabelEncoder
+
+from pyimagesearch.rgbhistogram import RGBHistogram
 
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
