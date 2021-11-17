@@ -88,7 +88,6 @@ model = MLPClassifier(
     shuffle=True,
     random_state=None,
     tol=1e-4,
-    verbose=True,
     warm_start=False,
     momentum=0.9,
     nesterovs_momentum=True,
